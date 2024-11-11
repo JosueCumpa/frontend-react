@@ -17,7 +17,6 @@ import toast, { Toaster } from "react-hot-toast";
 import { API_BASE_URL } from "../../api/axiosconf.js";
 import { PlusCircleFilled } from '@ant-design/icons';
 import { useOutletContext } from 'react-router-dom';
-import { estado } from '../../assets/code/estado.jsx';
 
 export default function AgregarTipoProducto({ type = "agregar", updateTipoProducto }) {
     const { isOpen, onOpen, onClose } = useDisclosure();

@@ -12,10 +12,9 @@ import {
     CardHeader,
     Card,
     CardBody,
-    CardFooter,
     Divider
 } from '@nextui-org/react';
-import { FileAddOutlined, EditOutlined, EyeOutlined } from '@ant-design/icons';
+import { EyeOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';

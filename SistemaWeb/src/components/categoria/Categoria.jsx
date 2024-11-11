@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
     Table,
     TableHeader,
@@ -13,7 +13,6 @@ import {
     Chip,
     Image,
     CardBody,
-    Button,
 } from "@nextui-org/react";
 import { useAsyncList } from "@react-stately/data";
 import { HomeOutlined } from '@ant-design/icons';
@@ -31,7 +30,6 @@ const statusColorMap = {
 const Categoria = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [page, setPage] = useState(1);
-    const [agregar, setAgregar] = React.useState(true);
     const rowsPerPage = 10; // ajustar el número de filas por página
     //variables para los filtros
     const [filteredItems, setFilteredItems] = useState([]);
@@ -143,9 +141,9 @@ const Categoria = () => {
                     },
                     {
                         title: (
-                            <>
+                            
                                 <span>Gestion de Categorias</span>
-                            </>
+                            
                         ),
                     },
 

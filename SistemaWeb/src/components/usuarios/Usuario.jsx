@@ -14,9 +14,7 @@ import {
     Image,
     Input,
     Select,
-    SelectSection,
     SelectItem,
-    Button,
     CardBody,
 } from "@nextui-org/react";
 import { useAsyncList } from "@react-stately/data";

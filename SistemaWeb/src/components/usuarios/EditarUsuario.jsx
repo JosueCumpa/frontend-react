@@ -11,7 +11,7 @@ import {
     Tooltip,
     useDisclosure,
 } from '@nextui-org/react';
-import { FileAddOutlined, EditOutlined } from '@ant-design/icons';
+import { EditOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { EyeFilledIcon } from '../../assets/code/EyeFilledIcon.jsx';

@@ -1,7 +1,5 @@
-import React from 'react';
 import {
     Button,
-    Input,
     Modal,
     ModalBody,
     ModalContent,
@@ -11,7 +9,7 @@ import {
     useDisclosure,
     Switch,
 } from '@nextui-org/react';
-import { FileAddOutlined, EditOutlined } from '@ant-design/icons';
+import { EditOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
@@ -19,8 +17,6 @@ import { API_BASE_URL } from '../../api/axiosconf.js';
 import { useOutletContext } from 'react-router-dom';
 
 export default function EditarTurno({ Turno, type = 'edit', updateTurno }) {
-    const [isVisible, setIsVisible] = useState(false);
-    const toggleVisibility = () => setIsVisible(!isVisible);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const [estado, setEstate] = useState(false);
     const [error, setError] = useState(false);

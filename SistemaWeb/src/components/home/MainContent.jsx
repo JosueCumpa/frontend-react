@@ -5,7 +5,7 @@ import { Layout, theme } from 'antd';
 import MenuLogout from '../../assets/code/MenuLogout';
 import StatusConnect from '../../assets/code/StatusConnect';
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content} = Layout;
 
 const MainContent = () => {
     const [darkMode, setDarkMode] = useState(false);

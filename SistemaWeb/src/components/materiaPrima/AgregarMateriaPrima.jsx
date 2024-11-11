@@ -14,7 +14,7 @@ import {
     Switch,
 } from "@nextui-org/react";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { API_BASE_URL } from "../../api/axiosconf.js";
 import { PlusCircleFilled } from '@ant-design/icons';

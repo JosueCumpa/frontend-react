@@ -5,17 +5,12 @@ import { Breadcrumb } from 'antd';
 import {
     Card,
     CardBody,
-    CardHeader,
-    Select,
-    SelectItem,
     Input
 } from "@nextui-org/react";
-import { LineChart, DonutChart, Legend, BarChart } from '@tremor/react';
+import { LineChart } from '@tremor/react';
 import axios from 'axios';
 import { API_BASE_URL } from '../../api/axiosconf.js';
 
-const valueFormatter = (number) =>
-    `Piezas ${Intl.NumberFormat('us').format(number).toString()}`;
 
 export default function Dashboard() {
     const location = useLocation();

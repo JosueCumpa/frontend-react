@@ -1,7 +1,5 @@
-import React from 'react';
 import {
     Button,
-    Input,
     Modal,
     ModalBody,
     ModalContent,
@@ -10,7 +8,7 @@ import {
     Tooltip,
     useDisclosure,
 } from '@nextui-org/react';
-import { FileAddOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
+import { DeleteOutlined } from '@ant-design/icons';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 import { useOutletContext } from 'react-router-dom';

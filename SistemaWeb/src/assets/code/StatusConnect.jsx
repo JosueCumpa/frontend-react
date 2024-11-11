@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react';
 import { Button, Tooltip } from "@nextui-org/react";
 import { WifiOutlined, DisconnectOutlined } from '@ant-design/icons';

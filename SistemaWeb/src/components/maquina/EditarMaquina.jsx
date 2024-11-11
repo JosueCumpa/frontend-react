@@ -12,7 +12,7 @@ import {
     Tooltip,
     useDisclosure,
 } from '@nextui-org/react';
-import { FileAddOutlined, EditOutlined } from '@ant-design/icons';
+import { EditOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
@@ -21,8 +21,6 @@ import { useOutletContext } from 'react-router-dom';
 import { estado } from '../../assets/code/estado.jsx';
 
 export default function EditarMaquina({ maquina, type = 'edit', updateMaquina }) {
-    const [isVisible, setIsVisible] = useState(false);
-    const toggleVisibility = () => setIsVisible(!isVisible);
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const [estate, setEstate] = useState(false);
     const [error, setError] = useState(false);

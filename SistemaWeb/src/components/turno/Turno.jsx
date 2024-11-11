@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
     Table,
     TableHeader,
@@ -9,12 +9,9 @@ import {
     Spinner,
     Pagination,
     Card,
-    CardBody,
     CardHeader,
     Chip,
     Image,
-    Input,
-    Button,
 } from "@nextui-org/react";
 import { useAsyncList } from "@react-stately/data";
 import { Breadcrumb } from 'antd';
@@ -33,7 +30,6 @@ const statusColorMap = {
 const Turno = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [page, setPage] = useState(1);
-    const [agregar, setAgregar] = React.useState(true);
     const [filteredItems, setFilteredItems] = useState([]);
     const rowsPerPage = 10; // ajustar el número de filas por página
 

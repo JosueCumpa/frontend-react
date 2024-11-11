@@ -1,8 +1,7 @@
 import React from 'react'
-import { UserOutlined } from '@ant-design/icons';
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, User } from "@nextui-org/react";
 import { useNavigate } from "react-router-dom";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 
 const MenuLogout = () => {

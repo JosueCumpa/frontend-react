@@ -24,11 +24,9 @@ import { HomeOutlined } from '@ant-design/icons';
 import { Breadcrumb } from 'antd';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { parseDate, getLocalTimeZone, today } from "@internationalized/date";
-import { useDateFormatter } from "@react-aria/i18n";
+import { getLocalTimeZone, today } from "@internationalized/date";
 import { API_BASE_URL } from '../../api/axiosconf.js';
 import AgregarPrediccion from './AgregarPrediccion.jsx';
-import DetallePrediccion from './DetallePrediccion.jsx';
 import EliminarPrediccion from './EliminarPrediccion.jsx';
 
 // Define el mapa de colores según el valor de la predicción

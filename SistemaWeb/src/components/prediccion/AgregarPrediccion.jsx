@@ -15,7 +15,6 @@ import {
     CardBody,
     Textarea,
     Divider,
-    Switch,
     DatePicker,
 } from "@nextui-org/react";
 import React from 'react';
@@ -25,7 +24,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { API_BASE_URL } from "../../api/axiosconf.js";
 import { PlusCircleFilled } from '@ant-design/icons';
 import { useOutletContext } from 'react-router-dom';
-import { parseDate, getLocalTimeZone, today } from "@internationalized/date";
+import { getLocalTimeZone, today } from "@internationalized/date";
 import { useDateFormatter } from "@react-aria/i18n";
 
 export default function AgregarPrediccion({ type = "agregar", updatePredicciones, operario, usucalidad, turno, maquina, tproducto, producto, colores, materiaPrima, aditivos }) {
